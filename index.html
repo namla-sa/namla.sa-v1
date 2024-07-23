@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="notranslate">
+<html lang="ar" class="notranslate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All Things Binary">
-    <meta name="keywords" content="Al Khobar, Saudi Arabia, Software and Hardware company, startup, technology, innovation">
+    <meta name="description" content="كل شيء تقني">
+    <meta name="keywords" content="الخبر, المملكة العربية السعودية, شركة البرمجيات والأجهزة, شركة ناشئة, تكنولوجيا, ابتكار, تطوير البرمجيات, هندسة الحاسوب, ريادة الأعمال, تطبيقات الجوال, خدمات تقنية, التحول الرقمي, التقنية الحديثة, الاستثمار في التكنولوجيا, نملة, نمله">
     <meta name="author" content="namla.sa">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Language" content="ar">
     <meta name="google" content="notranslate">
 
     <meta property="og:title" content="namla.sa">
-    <meta property="og:description" content="All Things Binary">
+    <meta property="og:description" content="كل شيء تقني">
     <meta property="og:image" content="https://cdn.namla.sa/namla.png">
     <meta property="og:url" content="https://namla.sa">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="namla.sa">
-    <meta name="twitter:description" content="All Things Binary">
+    <meta name="twitter:description" content="كل شيء تقني">
     <meta name="twitter:image" content="https://cdn.namla.sa/namla.png">
     <meta name="twitter:site" content="@namla_sa">
 
@@ -27,8 +27,9 @@
     <title>namla.sa</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
 
-        html,body {
+        html, body {
             margin: 0;
             padding: 0;
             background-color: black;
@@ -39,7 +40,6 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            margin: 0;
             box-sizing: border-box;
         }
 
@@ -50,7 +50,6 @@
             width: 100%;
             font-size: 24px;
         }
-
 
         footer {
             position: absolute;
@@ -65,7 +64,9 @@
             flex-direction: column;
             align-items: center;
             border: 1px solid white;
-            padding: 20px;
+            padding: 18px;
+            width: 14ch;
+            height: 20ch;
         }
 
         .content img {
@@ -73,35 +74,41 @@
             height: auto;
         }
 
-
         .content .caption {
             margin-top: 10px;
             display: inline-block;
             overflow: hidden;
             white-space: nowrap;
-            border-right: .15em solid white;
-            width: 7ch; /* Set width to match the exact length of "phase 1" */
-            animation: typing 1.5s steps(7, end) 1s forwards, blink-caret .75s step-end infinite 2.5s;
+            border-left: .15em solid white;
+            width: 9ch;
+            animation: typing 2s steps(13, end) 1s forwards, blink-caret .75s step-end infinite 2.5s;
             visibility: hidden;
+            direction: rtl;
+            font-size: large;
+            font-family: 'Beiruti', sans-serif; /* Apply Beiruti font to Arabic text */
         }
 
         @keyframes typing {
             from { width: 0; visibility: visible; }
-            to { width: 7ch; visibility: visible; }
+            to { width: 9ch; visibility: visible; }
         }
 
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: white }
         }
+
     </style>
 </head>
 <body>
     <header>namla.sa</header>
     <div class="content">
         <img src="https://cdn.namla.sa/namla.png" alt="Logo">
-        <div class="caption">phase 1</div>
+        <div class="caption">المرحلة الأولى</div>
     </div>
-    <footer>all things binary | info@namla.sa</footer>
-</body>
+    <footer>
+        <div style="font-family: 'Beiruti', sans-serif;">كل شيء تقني</div>
+        <div style="font-family: 'Share Tech Mono', monospace;">info@namla.sa</div>
+    </footer>
+    </body>
 </html>
