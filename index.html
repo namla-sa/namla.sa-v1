@@ -23,6 +23,7 @@
     <meta name="twitter:site" content="@namla_sa">
 
     <link rel="icon" href="https://cdn.namla.sa/namla.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>namla.sa</title>
     <style>
@@ -39,7 +40,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100%;
+            min-height: 100vh;
             box-sizing: border-box;
         }
 
@@ -59,23 +60,56 @@
             font-size: 14px;
         }
 
-        .content {
+        .cards-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px solid white;
-            padding: 18px;
-            width: 14ch;
-            height: 20ch;
+            gap: 20px;
+            margin: 80px 0;
         }
 
-        .content img {
+        .secondary-card-row {
+            display: flex;
+            gap: 2ch;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            padding: 18px;
+        }
+
+        .main-card {
+            width: 18ch;
+            height: 22ch;
+        }
+
+        .secondary-card {
+            width: 6ch;
+            height: 6ch;
+            border-radius: 15px;
+        }
+
+        .main-card img {
             max-width: 100px;
             height: auto;
         }
 
-        .content .caption {
+        .secondary-card i {
+            font-size: 24px;
+        }
+
+        .card .caption {
             margin-top: 10px;
+            font-size: large;
+            font-family: 'Beiruti', sans-serif;
+            direction: rtl;
+        }
+
+        .main-card .caption {
             display: inline-block;
             overflow: hidden;
             white-space: nowrap;
@@ -83,9 +117,15 @@
             width: 9ch;
             animation: typing 2s steps(13, end) 1s forwards, blink-caret .75s step-end infinite 2.5s;
             visibility: hidden;
-            direction: rtl;
-            font-size: large;
-            font-family: 'Beiruti', sans-serif; /* Apply Beiruti font to Arabic text */
+        }
+
+        .secondary-card .caption {
+            font-size: small;
+            margin-top: 5px;
+        }
+
+        a:hover {
+            color: #98ff98 !important;
         }
 
         @keyframes typing {
@@ -97,18 +137,33 @@
             from, to { border-color: transparent }
             50% { border-color: white }
         }
-
     </style>
 </head>
 <body>
     <header>namla.sa</header>
-    <div class="content">
-        <img src="https://cdn.namla.sa/namla.png" alt="Logo">
-        <div class="caption">المرحلة الأولى</div>
+    <div class="cards-container">
+        <div class="card main-card">
+            <img src="https://cdn.namla.sa/namla.png" alt="Logo">
+            <div class="caption">المرحلة الأولى</div>
+        </div>
+        <div class="secondary-card-row">
+            <div class="card secondary-card">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <div class="caption">Vision IoT</div>
+            </div>
+            <div class="card secondary-card">
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <div class="caption">Research</div>
+            </div>
+        </div>
     </div>
     <footer>
         <div style="font-family: 'Beiruti', sans-serif;">كل شيء تقني</div>
-        <div style="font-family: 'Share Tech Mono', monospace;">info@namla.sa</div>
+        <div style="font-family: 'Share Tech Mono', monospace;">
+            info@namla.sa | 
+            <a href="https://cdn.namla.sa/namla.pdf" 
+               style="color: inherit; text-decoration: none; transition: color 0.3s;">About Us</a>
+        </div>
     </footer>
-    </body>
+</body>
 </html>
