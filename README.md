@@ -1,4 +1,4 @@
-# Namla.sa Website
+# namla.sa Website
 
 This is a simple, single-page website for namla.sa, our technology-focused company based in Saudi Arabia.
 
