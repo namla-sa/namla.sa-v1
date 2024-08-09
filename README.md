@@ -1,6 +1,6 @@
 # Namla.sa Website
 
-This is a simple, single-page website for Namla.sa, a technology-focused company based in Saudi Arabia.
+This is a simple, single-page website for namla.sa, our technology-focused company based in Saudi Arabia.
 
 ## Overview
 
@@ -53,9 +53,6 @@ namla-website/
 
 This website should work on all modern web browsers that support HTML5 and CSS3.
 
-## License
-
-[Include license information here]
 
 ## Contact
 
