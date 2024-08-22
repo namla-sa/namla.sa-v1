@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 80px 0;
+}
+
+.secondary-card-row {
+    display: flex;
+    gap: 2ch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 18px;
+}
+
+.main-card {
+    width: 18ch;
+    height: 22ch;
+}
+
+.secondary-card {
+    width: 6ch;
+    height: 6ch;
+    border-radius: 15px;
+}
+
+.main-card img {
+    max-width: 100px;
+    height: auto;
+}
+
+.secondary-card i {
+    font-size: 24px;
+}
+
+.card .caption {
+    margin-top: 10px;
+    font-size: large;
+    font-family: 'Beiruti', sans-serif;
+    direction: rtl;
+}
+
+.main-card .caption {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: .15em solid white;
+    width: 9ch;
+    animation: typing 2s steps(4, end) 1s forwards, blink-caret .75s step-end infinite 2.5s;
+    visibility: hidden;
+}
+
+.secondary-card .caption {
+    font-size: small;
+    margin-top: 5px;
+}
+
+a:hover {
+    color: #98ff98 !important;
+}
+
+@keyframes typing {
+    from { width: 0; visibility: visible; }
+    to { width: 3ch; visibility: visible; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
